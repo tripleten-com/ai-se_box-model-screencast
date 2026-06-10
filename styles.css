@@ -1,0 +1,13 @@
+.wrapper {
+  background: #c0622b;        /* margin area (dark orange) */
+  display: inline-block;      /* hugs the box → keeps the dark orange hidden until Scene 5 */
+}
+
+.box {
+  background: #6fae5f;        /* padding area (green) */
+}
+
+.box .content {
+  background: #4a90d9;        /* content (blue) */
+  color: #fff;
+}
