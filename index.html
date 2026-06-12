@@ -7,65 +7,87 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="box-model" id="boxModel">
-        <div class="margin-layer" id="marginLayer">
+  <div class="container" id="container">
+    <!-- Single box (frames 0-3) -->
+    <div class="box-model" id="boxModel">
+      <!-- Margin layer (outermost) -->
+      <div class="margin-layer" id="marginLayer">
+        <!-- Margin labels -->
+        <div class="margin-label margin-label-top">margin-top</div>
+        <div class="margin-label margin-label-bottom">margin-bottom</div>
+        <div class="margin-label margin-label-left">margin-left</div>
+        <div class="margin-label margin-label-right">margin-right</div>
+
+        <!-- Border layer -->
+        <div class="border-layer" id="borderLayer">
+          <div class="border-label">element border</div>
+
+          <!-- Padding layer -->
+          <div class="padding-layer" id="paddingLayer">
+            <!-- Padding labels -->
+            <div class="padding-label padding-label-top">padding-top</div>
+            <div class="padding-label padding-label-bottom">padding-bottom</div>
+            <div class="padding-label padding-label-left">padding-left</div>
+            <div class="padding-label padding-label-right">padding-right</div>
+
+            <!-- Content -->
+            <div class="content">content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dual boxes (frame 4) -->
+    <div class="dual-boxes" id="dualBoxes">
+      <!-- Left box -->
+      <div class="box-model" id="boxModelLeft">
+        <div class="margin-layer" id="marginLayerLeft">
           <div class="margin-label margin-label-top">margin-top</div>
           <div class="margin-label margin-label-bottom">margin-bottom</div>
           <div class="margin-label margin-label-left">margin-left</div>
           <div class="margin-label margin-label-right">margin-right</div>
-          <div class="border-layer" id="borderLayer">
+
+          <div class="border-layer" id="borderLayerLeft">
             <div class="border-label">element border</div>
-            <div class="padding-layer" id="paddingLayer">
+
+            <div class="padding-layer" id="paddingLayerLeft">
               <div class="padding-label padding-label-top">padding-top</div>
               <div class="padding-label padding-label-bottom">padding-bottom</div>
               <div class="padding-label padding-label-left">padding-left</div>
               <div class="padding-label padding-label-right">padding-right</div>
+
               <div class="content">content</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="dual-boxes" id="dualBoxes">
-        <div class="box-model" id="boxModelLeft">
-          <div class="margin-layer" id="marginLayerLeft">
-            <div class="margin-label margin-label-top">margin-top</div>
-            <div class="margin-label margin-label-bottom">margin-bottom</div>
-            <div class="margin-label margin-label-left">margin-left</div>
-            <div class="margin-label margin-label-right">margin-right</div>
-            <div class="border-layer" id="borderLayerLeft">
-              <div class="border-label">element border</div>
-              <div class="padding-layer" id="paddingLayerLeft">
-                <div class="padding-label padding-label-top">padding-top</div>
-                <div class="padding-label padding-label-bottom">padding-bottom</div>
-                <div class="padding-label padding-label-left">padding-left</div>
-                <div class="padding-label padding-label-right">padding-right</div>
-                <div class="content">content</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box-model" id="boxModelRight">
-          <div class="margin-layer" id="marginLayerRight">
-            <div class="margin-label margin-label-top">margin-top</div>
-            <div class="margin-label margin-label-bottom">margin-bottom</div>
-            <div class="margin-label margin-label-left">margin-left</div>
-            <div class="margin-label margin-label-right">margin-right</div>
-            <div class="border-layer" id="borderLayerRight">
-              <div class="border-label">element border</div>
-              <div class="padding-layer" id="paddingLayerRight">
-                <div class="padding-label padding-label-top">padding-top</div>
-                <div class="padding-label padding-label-bottom">padding-bottom</div>
-                <div class="padding-label padding-label-left">padding-left</div>
-                <div class="padding-label padding-label-right">padding-right</div>
-                <div class="content">content</div>
-              </div>
+
+      <!-- Right box -->
+      <div class="box-model" id="boxModelRight">
+        <div class="margin-layer" id="marginLayerRight">
+          <div class="margin-label margin-label-top">margin-top</div>
+          <div class="margin-label margin-label-bottom">margin-bottom</div>
+          <div class="margin-label margin-label-left">margin-left</div>
+          <div class="margin-label margin-label-right">margin-right</div>
+
+          <div class="border-layer" id="borderLayerRight">
+            <div class="border-label">element border</div>
+
+            <div class="padding-layer" id="paddingLayerRight">
+              <div class="padding-label padding-label-top">padding-top</div>
+              <div class="padding-label padding-label-bottom">padding-bottom</div>
+              <div class="padding-label padding-label-left">padding-left</div>
+              <div class="padding-label padding-label-right">padding-right</div>
+
+              <div class="content">content</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="hint" id="hint">Click to continue</div>
+  </div>
+
+  <div class="hint" id="hint">Click to continue</div>
     <script src="script.js"></script>
   </body>
 </html>
